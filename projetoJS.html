@@ -33,7 +33,16 @@
 </head>
 
 <body>
-    
+    <button class="accordion" onclick="ativAcord()">Seção 01</button>
+    <div class="panel">
+        <p>Conteudo da Seção 1...</p>
+    </div>
+    <script>
+        function ativAcord(){
+            const panel = document.querySelector('.panel')
+            panel.style.display = (panel.style.display == 'none' || panel.style.display == '')?'block':"none";
+        }
+    </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
